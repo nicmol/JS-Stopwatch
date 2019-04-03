@@ -4,7 +4,7 @@
 */
  var isRunning = false;
  var timer = null;
- var timerTime =0;
+ var timerTime = 0;
 
 function init()
 {
@@ -49,19 +49,17 @@ function incrementTimer() {
 function pad(number) {
     // add a leading 0 if the number is < 10
     if(number < 10){
-        number = "0" + number;
-        return number;
-        
+        number = "0" + number;             
     }
+    return number;
 }
 
 function stopTimer() {
     // if the timer is running, stop it
     if(isRunning = true){
+        isRunning = false;
         clearInterval(timer);
-
     }
-
 }
 
 function resetTimer() {
@@ -69,9 +67,11 @@ function resetTimer() {
     stopTimer();
     
     // set the timerTime back to 0
-    timerTime
+    timerTime = 0;
     
     // write 00 to the elements on the page for minutes and seconds
+    document.getElementById("minutes").innerHTML = "00";
+    document.getElementById("seconds").innerHTML = "00";
 
 }
 
