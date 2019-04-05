@@ -1,0 +1,11 @@
+  .timer {
+    text-align: center;
+    padding: 25px;
+    margin: 25px;
+    font-size: xx-large;
+   
+}
+
+#bootstrap-overrides {
+    background-color:lightsteelblue;
+}
